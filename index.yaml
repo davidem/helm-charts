@@ -1,0 +1,25 @@
+apiVersion: v1
+entries:
+  app1:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-01-15T11:37:29.433329+01:00"
+    description: A Helm chart for Kubernetes
+    digest: 26c0f689375d0927dd3ea5271fb2adcad4b937e318c9e4dae6d23e2bf7b07ec0
+    name: app1
+    type: application
+    urls:
+    - https://github.com/davidem/helm-charts/releases/download/app1-0.1.0/app1-0.1.0.tgz
+    version: 0.1.0
+  app2:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-01-15T11:37:29.603359+01:00"
+    description: A Helm chart for Kubernetes
+    digest: 1ca047ebe78f5419fc63422b290c2a9fcc6f01754aa1a6d79b36227675b86bb4
+    name: app2
+    type: application
+    urls:
+    - https://github.com/davidem/helm-charts/releases/download/app2-0.1.0/app2-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-01-15T11:37:29.603372+01:00"
