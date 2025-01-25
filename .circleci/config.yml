@@ -10,7 +10,7 @@ jobs:
       - run:
           name: lint
           command: |
-            chart_test.sh --config .testenv --no-install
+            chart_test.sh --no-install
 workflows:
   version: 2
   lint:
