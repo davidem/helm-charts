@@ -1,22 +1,26 @@
 name: Lint and Test Charts
 
 on:
+  push:
+   branches: [ main ] 
   pull_request:
-    paths:
-      - 'charts/**'
+   branches: [ main ] 
 
 jobs:
-  lint-chart:
+    name: Lint
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-      - name: Run chart-testing (lint)
-        uses: helm/chart-testing-action@master
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Fetch history
+        run: git fetch --prune --unshallow
+    
+      - name: Lint Helm charts
+        uses: helm/chart-testing-action@v1.0.0
         with:
           command: lint
           config: .github/ct.yaml
-
 
   lint-docs:
     runs-on: ubuntu-latest
