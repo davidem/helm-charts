@@ -2,9 +2,9 @@ name: Release Charts
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
     paths:
-      - 'charts/**'
+      - "charts/**"
 
 jobs:
   release:
@@ -17,6 +17,6 @@ jobs:
           git config user.name "$GITHUB_ACTOR"
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
       - name: Run chart-releaser
-        uses: helm/chart-releaser-action@master
+        uses: helm/chart-releaser-action@main
         env:
-          CR_TOKEN: '${{ secrets.CR_TOKEN }}'
+          CR_TOKEN: "${{ secrets.CR_TOKEN }}"
