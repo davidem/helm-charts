@@ -29,4 +29,14 @@ entries:
     urls:
     - https://github.com/davidem/helm-charts/releases/download/grocy-8.5.2/grocy-8.5.2.tgz
     version: 8.5.2
-generated: "2025-01-26T13:09:44.011433756Z"
+  - apiVersion: v2
+    appVersion: 4.4.0
+    created: "2025-01-26T21:56:48.550766439Z"
+    description: 'A Helm chart for Grocy: ERP beyond your fridge'
+    digest: a6373e5b28f4d58246d1e04b3d71e590b32ea270e5e608177c92a918c44695ac
+    name: grocy
+    type: application
+    urls:
+    - https://github.com/davidem/helm-charts/releases/download/grocy-0.1.0/grocy-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-01-26T21:56:48.550795914Z"
