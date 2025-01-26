@@ -17,7 +17,7 @@ jobs:
         run: git fetch --prune --unshallow
 
       - name: Lint Helm charts
-        uses: helm/chart-testing-action@latest
+        uses: helm/chart-testing-action@v3.12.0
         with:
           command: lint
           config: .github/ct.yaml
